@@ -11,6 +11,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import javax.swing.*;
+import java.awt.event.*;
 
 public class Framez1 {
 
@@ -87,11 +88,19 @@ public class Framez1 {
 				{
 					t3.setEditable(true);
 				}
-		else
-		{
-			t3.setEditable(false);
-			JOptionPane.showMessageDialog(frame, " Phone number must contain only digits");
-		}
+		       else
+		       {
+			        
+			        JOptionPane.showMessageDialog(frame, " Phone number must contain only digits");
+		       }
+				if(phone.length()>10)
+				{
+					t3.setEditable(false);
+					JOptionPane.showMessageDialog(frame, "Phone number must contain only 10 digits");
+					t3.setEditable(true);
+				}
+
+				
 		
 		}
 		});
@@ -110,23 +119,8 @@ public class Framez1 {
 				{
 					JOptionPane.showMessageDialog(frame, "name cannot be empty");
 				}
-				/*
-				else
-				{
-					t1.setEditable(false);
-					JOptionPane.showMessageDialog(frame, "Phone number must contain only digits");
-				}
-				*/
-				if(phno.length()>10)
-				{
-					t3.setEditable(false);
-					JOptionPane.showMessageDialog(frame, "Phone number must contain only 10 digits");
-					t3.setEditable(true);
-				}
-				else
-				{
-					t3.setEditable(true);
-				}
+				
+	
 				
 				Framez1display fobj = new Framez1display(name,address,phno);
 				

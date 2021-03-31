@@ -93,15 +93,15 @@ public class Framez1display {
 		lblNewLabel_2.setBounds(48, 175, 190, 17 );
 		frame.getContentPane().add(lblNewLabel_2);
 		
-		backbtn = new JButton("BACK");
-		backbtn.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				
+		JButton btnNewButton = new JButton("Back");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
 				frame.setVisible(false);
 			}
 		});
-		backbtn.setBounds(150, 216, 89, 23);
-		frame.getContentPane().add(backbtn);
+		btnNewButton.setBounds(44, 227, 89, 23);
+		frame.getContentPane().add(btnNewButton);
+
 	}
 	
 	private void initialize() {
@@ -143,7 +143,15 @@ public class Framez1display {
 		lblNewLabel_2.setBounds(48, 175, 190, 17);
 		frame.getContentPane().add(lblNewLabel_2);
 		
+		JButton btnNewButton = new JButton("Back");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				frame.setVisible(false);
+			}
+		});
+		btnNewButton.setBounds(44, 227, 89, 23);
+		frame.getContentPane().add(btnNewButton);
+		
 		
 	}
-
 }
